@@ -3,7 +3,32 @@
     <style name="Base.Theme.HepsiBurada" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/black</item>
     </style>
 
     <style name="Theme.HepsiBurada" parent="Base.Theme.HepsiBurada" />
+
+    <style name="circler_button" parent="Widget.MaterialComponents.Button.OutlinedButton" >
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minWidth">12dp</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="add_to_card_button" parent="Widget.MaterialComponents.Button.OutlinedButton" >
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">12dp</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/add_to_card_button_color</item>
+    </style>
+
+
 </resources>

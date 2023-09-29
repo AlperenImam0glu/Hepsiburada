@@ -3,5 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="custom_orange">#f1774f</color>
+    <color name="border_orange">#f4c3a5</color>
+    <color name="star_color">#f3a026</color>
+    <color name="price_color">#429e48</color>
+    <color name="light_grey">#f5f5f5</color>
+    <color name="add_to_card_button_color">#e0e0e0</color>
 
 </resources>
