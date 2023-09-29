@@ -1,23 +1,22 @@
 package com.example.hepsiburada.ui.adapter
 
-
-
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hepsiburada.data.model.TopRankModel
-import com.example.hepsiburada.databinding.ProductsListItemBinding
-import com.example.hepsiburada.databinding.PromotionItemBinding
+import com.example.hepsiburada.databinding.PremiumListItemBinding
 
-class BestSellingAdapter(var mContext: Context, var productList: List<TopRankModel>) :
-    RecyclerView.Adapter<BestSellingAdapter.ViewHolder>() {
+class PremiumCardAdapter(val mContext: Context, val productList: List<TopRankModel>) :
+    RecyclerView.Adapter<PremiumCardAdapter.ViewHolder>() {
 
-    inner class ViewHolder(binding: ProductsListItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(binding: PremiumListItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ProductsListItemBinding.inflate(LayoutInflater.from(mContext), parent, false)
+        val binding = PremiumListItemBinding.inflate(LayoutInflater.from(mContext), parent, false)
         return ViewHolder(binding)
     }
 

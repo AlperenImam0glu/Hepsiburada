@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homepageFragment"
+        android:icon="@drawable/homepage_icon"
+        android:title="Anasayfam"
+        />
+    <item
+        android:icon="@drawable/deneme"
+        android:title="Kategorilerim" />
+    <item
+        android:icon="@drawable/my_cart_icon"
+        android:title="Sepetim" />
+    <item
+        android:icon="@drawable/favorite_icon"
+        android:title="Listelerim" />
+    <item
+        android:icon="@drawable/homepage_icon"
+        android:title="Hepsi" />
+</menu>
