@@ -10,7 +10,7 @@ import com.example.hepsiburada.databinding.PremiumListItemBinding
 class PremiumCardAdapter(val mContext: Context, val productList: List<TopRankModel>) :
     RecyclerView.Adapter<PremiumCardAdapter.ViewHolder>() {
 
-    inner class ViewHolder(binding: PremiumListItemBinding) :
+    inner class ViewHolder(var binding: PremiumListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
     }
@@ -26,5 +26,12 @@ class PremiumCardAdapter(val mContext: Context, val productList: List<TopRankMod
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        holder.binding.image.setImageResource(
+            mContext.resources.getIdentifier(
+                productList[position].img,
+                "drawable",
+                mContext.packageName
+            )
+        )
     }
 }

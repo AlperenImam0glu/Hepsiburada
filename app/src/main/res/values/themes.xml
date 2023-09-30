@@ -39,5 +39,9 @@
     </style>
 
 
+    <style name="custom.bottomNav" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/custom_orange</item>
+
+    </style>
 
 </resources>

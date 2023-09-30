@@ -9,7 +9,7 @@ import com.example.hepsiburada.databinding.TopRanksItemBinding
 
 class TopRankAdapter(var mContext: Context,var productList :List<TopRankModel>) : RecyclerView.Adapter<TopRankAdapter.ViewHolder>(){
 
-    inner class ViewHolder(binding: TopRanksItemBinding): RecyclerView.ViewHolder(binding.root){
+    inner class ViewHolder(var binding: TopRanksItemBinding): RecyclerView.ViewHolder(binding.root){
 
     }
 
@@ -23,6 +23,17 @@ class TopRankAdapter(var mContext: Context,var productList :List<TopRankModel>) 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+        holder.binding.altBaslik.text=productList[position].altBaslik
+        holder.binding.ustBaslik.text=productList[position].ustBaslik
+
+        holder.binding.image.setImageResource(
+            mContext.resources.getIdentifier(
+                productList[position].img,
+                "drawable",
+                mContext.packageName
+            )
+        )
 
     }
 }

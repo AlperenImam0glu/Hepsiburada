@@ -11,7 +11,7 @@ import com.example.hepsiburada.databinding.PromotionItemBinding
 class AdvertApdater(var mContext: Context, var productList: List<TopRankModel>) :
     RecyclerView.Adapter<AdvertApdater.ViewHolder>() {
 
-    inner class ViewHolder(binding: AdvertRowItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(var binding: AdvertRowItemBinding) : RecyclerView.ViewHolder(binding.root) {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -25,5 +25,12 @@ class AdvertApdater(var mContext: Context, var productList: List<TopRankModel>) 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        holder.binding.image.setImageResource(
+            mContext.resources.getIdentifier(
+                productList[position].img,
+                "drawable",
+                mContext.packageName
+            )
+        )
     }
 }

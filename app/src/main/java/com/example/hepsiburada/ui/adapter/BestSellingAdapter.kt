@@ -13,7 +13,7 @@ import com.example.hepsiburada.databinding.PromotionItemBinding
 class BestSellingAdapter(var mContext: Context, var productList: List<TopRankModel>) :
     RecyclerView.Adapter<BestSellingAdapter.ViewHolder>() {
 
-    inner class ViewHolder(binding: ProductsListItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(var binding: ProductsListItemBinding) : RecyclerView.ViewHolder(binding.root) {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,5 +27,16 @@ class BestSellingAdapter(var mContext: Context, var productList: List<TopRankMod
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+
+        holder.binding.price.text = productList[position].altBaslik
+
+            holder.binding.productName.text = productList[position].ustBaslik
+        holder.binding.image.setImageResource(
+            mContext.resources.getIdentifier(
+                productList[position].img,
+                "drawable",
+                mContext.packageName
+            )
+        )
     }
 }

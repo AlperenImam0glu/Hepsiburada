@@ -3,19 +3,23 @@
 
     <item
         android:id="@+id/homepageFragment"
-        android:icon="@drawable/homepage_icon"
+        android:icon="@drawable/homepage_icon_orange"
         android:title="Anasayfam"
         />
     <item
+        android:id="@+id/categoryFragment"
         android:icon="@drawable/deneme"
         android:title="Kategorilerim" />
     <item
+        android:id="@+id/cartFragment"
         android:icon="@drawable/my_cart_icon"
         android:title="Sepetim" />
     <item
+        android:id="@+id/favoriteFragment"
         android:icon="@drawable/favorite_icon"
         android:title="Listelerim" />
     <item
-        android:icon="@drawable/homepage_icon"
+        android:id="@+id/allCategoriesFragment"
+        android:icon="@drawable/see_all_icon"
         android:title="Hepsi" />
 </menu>
