@@ -107,14 +107,15 @@
 
             <ImageView
                 android:layout_weight="1"
-                android:layout_marginRight="16dp"
-                android:layout_width="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="48dp"
                 android:layout_height="32dp"
-                android:src="@drawable/favorite_icon" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/bell_icon" />
 
             <ImageView
                 android:layout_weight="1"
-                android:layout_width="32dp"
+                android:layout_width="48dp"
                 android:layout_height="32dp"
                 android:src="@drawable/user" />
 
